@@ -1,0 +1,24 @@
+# Build / publish artifacts
+out/
+bin/
+obj/
+*.user
+*.suo
+*.vs/
+.vs/
+
+# Editor backup / temp
+*.tmp
+*~
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs produced at runtime (USB and local machine logs)
+usb-sample/LabNetwork/Logs/
+Logs/
+/release
