@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg{fill:#0e1116;}
+      .panel{fill:#141a22;}
+      .line{fill:none;stroke:#2a323d;stroke-width:1;}
+      .muted{fill:#8b94a1;}
+      .fg{fill:#e6e9ef;}
+      .accent{fill:#e3b76b;}
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;}
+      .sans{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="120"/>
+
+  <text x="40" y="44" class="fg sans" font-size="24" font-weight="700" letter-spacing="-0.5">Architecture</text>
+  <text x="40" y="70" class="muted sans" font-size="14">Pure Core on the bottom. Platform services and TUI on top. The TUI has no networking logic.</text>
+
+  <g transform="translate(40 92)">
+    <!-- Core -->
+    <g transform="translate(0 0)">
+      <rect class="panel" x="0" y="-22" width="180" height="44" rx="10"/>
+      <rect class="line" x="0" y="-22" width="180" height="44" rx="10"/>
+      <rect class="accent" x="8" y="-14" width="6" height="6" rx="1.5"/>
+      <text x="22" y="2" class="fg sans" font-size="14" font-weight="600">Nanaininai.Core</text>
+      <text x="22" y="18" class="muted sans" font-size="12">pure .NET · unit-tested</text>
+    </g>
+
+    <!-- arrow -->
+    <g transform="translate(200 0)">
+      <path d="M0 -12 L20 -12 L13 -6 Z" fill="#3a4452"/>
+      <path d="M0 0 L20 0 L13 6 Z" fill="#3a4452"/>
+    </g>
+
+    <!-- Platform + Services -->
+    <g transform="translate(230 0)">
+      <rect class="panel" x="0" y="-22" width="260" height="44" rx="10"/>
+      <rect class="line" x="0" y="-22" width="260" height="44" rx="10"/>
+      <rect class="accent" x="8" y="-14" width="6" height="6" rx="1.5"/>
+      <text x="22" y="2" class="fg sans" font-size="14" font-weight="600">Platform + Services</text>
+      <text x="22" y="18" class="muted sans" font-size="12">netsh · WMI · PowerShell · MPR</text>
+    </g>
+
+    <!-- arrow -->
+    <g transform="translate(500 0)">
+      <path d="M0 -12 L20 -12 L13 -6 Z" fill="#3a4452"/>
+      <path d="M0 0 L20 0 L13 6 Z" fill="#3a4452"/>
+    </g>
+
+    <!-- TUI + CLI -->
+    <g transform="translate(530 0)">
+      <rect class="panel" x="0" y="-22" width="220" height="44" rx="10"/>
+      <rect class="line" x="0" y="-22" width="220" height="44" rx="10"/>
+      <rect class="accent" x="8" y="-14" width="6" height="6" rx="1.5"/>
+      <text x="22" y="2" class="fg sans" font-size="14" font-weight="600">TUI + CLI</text>
+      <text x="22" y="18" class="muted sans" font-size="12">Terminal.Gui · scriptable CLI</text>
+    </g>
+
+    <!-- test shield -->
+    <g transform="translate(770 0)">
+      <rect class="panel" x="0" y="-22" width="380" height="44" rx="10"/>
+      <rect class="line" x="0" y="-22" width="380" height="44" rx="10"/>
+      <text x="16" y="2" class="fg sans" font-size="14" font-weight="600">tests/Nanaininai.Tests/</text>
+      <text x="16" y="18" class="muted sans" font-size="12">105 unit tests · integration plan in docs/</text>
+    </g>
+  </g>
+</svg>

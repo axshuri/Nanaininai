@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nanaininai README asset previews</title>
+<style>
+  :root{
+    --bg:#0e1116;
+    --panel:#141a22;
+    --line:#2a323d;
+    --muted:#8b94a1;
+    --fg:#e6e9ef;
+    --accent:#e3b76b;
+  }
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:900px;margin:0 auto;padding:24px 16px 80px;}
+  .asset{margin:0 0 32px;}
+  .label{font-size:12px;letter-spacing:2px;color:var(--muted);margin:0 0 8px;}
+  .frame{width:100%;border:1px solid var(--line);border-radius:14px;background:var(--panel);
+    overflow:hidden;}
+  img{width:100%;display:block;}
+  .note{font-size:13px;color:var(--muted);margin:8px 2px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="asset">
+    <p class="label">HERO</p>
+    <div class="frame">
+      <img src="readme/hero.svg" alt="Nanaininai hero preview">
+    </div>
+    <p class="note">Previewed at a conservative GitHub content width so small labels stay legible.</p>
+  </div>
+
+  <div class="asset">
+    <p class="label">SECTION HEADER — PIPELINE</p>
+    <div class="frame">
+      <img src="readme/header-pipeline.svg" alt="Workflow section header preview">
+    </div>
+  </div>
+
+  <div class="asset">
+    <p class="label">SECTION HEADER — ARCHITECTURE</p>
+    <div class="frame">
+      <img src="readme/header-architecture.svg" alt="Architecture section header preview">
+    </div>
+  </div>
+</div>
+</body>
+</html>
