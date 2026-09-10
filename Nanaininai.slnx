@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/Nanaininai.Core/Nanaininai.Core.csproj" />
     <Project Path="src/Nanaininai/Nanaininai.csproj" />
   </Folder>
   <Folder Name="/tests/">
